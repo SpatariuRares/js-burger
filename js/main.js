@@ -26,16 +26,18 @@ let sconti=[
         sconto:0.5
     }
 ];
-
+document.getElementById("price").innerHTML=panino.prezzo;
 let c;
 document.getElementById("input").addEventListener("click",function(event){
     c=event.target;
     if (c.checked == true){
         panino.aggiunte.push(c.id);
         panino.prezzo+=5;
+        document.getElementById("price").innerHTML=panino.prezzo;
     } else if (c.checked == false){
         panino.aggiunte.pop(c.id);
         panino.prezzo-=5;
+        document.getElementById("price").innerHTML=panino.prezzo;
     }
 })
 
