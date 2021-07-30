@@ -15,6 +15,7 @@
     prezzo:50
 }
 
+
 let sconti=[
     {
         codice:"ciao",
@@ -24,7 +25,7 @@ let sconti=[
         codice:"buono",
         sconto:0.5
     }
-    ];
+];
 
 let c;
 document.getElementById("input").addEventListener("click",function(event){
@@ -32,7 +33,7 @@ document.getElementById("input").addEventListener("click",function(event){
     if (c.checked == true){
         panino.aggiunte.push(c.id);
         panino.prezzo+=5;
-    } else {
+    } else if (c.checked == false){
         panino.aggiunte.pop(c.id);
         panino.prezzo-=5;
     }

@@ -11,16 +11,51 @@
 
 <body class="debug">
     <!-- Inizio Header -->
-    <input type="text" name="nome_panino" id="nome_panino">
-    <div id="input">
-        <input type="checkbox" name="Cheese" id="Cheese" class="aggiunte">
-        <input type="checkbox" name="Egg" id="Egg" class="aggiunte">
-        <input type="checkbox" name="Mustard" id="Mustard" class="aggiunte">
-        <input type="checkbox" name="Tomato" id="Tomato" class="aggiunte">
-        <input type="checkbox" name="Lettuce" id="Lettuce" class="aggiunte">
-        <input type="checkbox" name="ketchup" id="ketchup" class="aggiunte">
+    <div id="container">
+        <header>
+            <h1>Create Your Burger</h1>
+            <img src="img/burger-top.png" alt="">
+        </header>
+        <main>
+            <input type="text" name="nome_panino" id="nome_panino" placeholder="Nome panino">
+            <div id="input">
+                <div class="col">
+                    <label for="Cheese">
+                        <img src="img/cheese.svg" alt="" class="imagini"> Cheese
+                        <input type="checkbox" name="Cheese" id="Cheese" class="aggiunte">
+                    </label>
+                    <label for="Egg">
+                        <img src="img/fried-egg.svg" alt="" class="imagini"> Egg
+                        <input type="checkbox" name="Egg" id="Egg" class="aggiunte">
+                    </label>
+                    <label for="Mustard">
+                        <img src="img/mustard.svg" alt="" class="imagini"> Mustard
+                        <input type="checkbox" name="Mustard" id="Mustard" class="aggiunte">
+                    </label>
+                </div>
+                <div class="col">
+                    <label for="Tomato">
+                        <img src="img/tomato.svg" alt="" class="imagini"> Tomato
+                        <input type="checkbox" name="Tomato" id="Tomato" class="aggiunte">
+                    </label>
+                    <label for="Lettuce">
+                        <img src="img/lettuce.svg" alt="" class="imagini"> Lettuce
+                        <input type="checkbox" name="Lettuce" id="Lettuce" class="aggiunte">
+                    </label>
+                    <label for="ketchup">
+                        <img src="img/ketchup.svg" alt="" class="imagini"> ketchup
+                        <input type="checkbox" name="ketchup" id="ketchup" class="aggiunte">
+                    </label>
+                </div>
+                
+            </div>
+            <input type="text" name="discount" id="discount">
+        </main>
+        <Footer>
+            <h2>your price</h2>
+            <h2 id="price"></h2>
+        </Footer>
     </div>
-    <input type="text" name="discount" id="discount">
     <!-- Fine Footer -->
     <script src="js/main.js"></script>
 </body>
