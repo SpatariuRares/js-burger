@@ -10,7 +10,7 @@ body{
 
 #container {
     width:80%;
-    height:100vh;
+    min-height:100vh;
     margin:auto;
     background-color:white;
 }
@@ -41,7 +41,7 @@ header>img {
 
 
 main{
-    height: calc(100% - 100px - 200px);
+    height: calc(100vh - 100px - 200px);
     padding: 20px 50px ;
 }
 
@@ -52,7 +52,8 @@ main{
 .col{
     display:flex;
     flex-direction: column;
-    margin-right: 80px;
+    margin-right: auto;
+    width: 50%;
 }
 
 #input>h2{
@@ -105,4 +106,10 @@ footer{
     height: 100px;
     display:flex;
     justify-content:space-between;
+}
+
+@media  (max-width: 992px) {
+    .row{
+        flex-direction:column;
+    }
 }
