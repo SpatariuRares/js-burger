@@ -76,6 +76,26 @@ main{
 }
 
 
+input[type=text]{
+    border: 0px;
+}
+
+input[type=checkbox],.check>i{
+    opacity: 0;
+}
+.check{
+    display:inline-block;
+    content: "";
+    width:20px;
+    height:20px;
+    background-color:red;
+    border-radius:5px;
+}
+
+input[type=checkbox]:checked ~ .check>i{
+    opacity: 100%;
+    color: white;
+}
 
 
 /*------------------------------footer*/
